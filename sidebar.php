@@ -1,4 +1,4 @@
-    <!-- Column 2 / Sidebar -->
+   <!-- Column 2 / Sidebar -->
     <div class="grid_4">
 
     <?php if ( !function_exists('dynamic_sidebar')
