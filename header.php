@@ -7,7 +7,7 @@
         if( is_home() ){
             bloginfo("name");echo "-";bloginfo("description");
         }elseif( is_category() ){
-            single_cat_tigle();echo "-";bloginfo("name");
+            bloginfo("name");
         }elseif( is_single() || is_page() ){
             single_post_title();
         }elseif( is_search() ){
