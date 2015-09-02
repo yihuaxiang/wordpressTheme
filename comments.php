@@ -58,10 +58,11 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
             <label for="email">电子邮件</label>
             <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="23" tabindex="2" />
         </li>
-        <li class="clearfix">
+
+<!--         <li class="clearfix">
             <label for="email">网址(选填)</label>
             <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="23" tabindex="3" />
-        </li>
+        </li> -->
         <?php else : ?>
         <li class="clearfix">您已登录:<a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="退出登录">退出 &raquo;</a></li>
         <?php endif; ?>

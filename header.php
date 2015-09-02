@@ -82,7 +82,7 @@ $keywords = trim(strip_tags($keywords));
 <body>
 <div id="wrapper" class="container_12 clearfix">
     <!-- Text Logo -->
-    <h1 id="logo" class="grid_4"><?php bloginfo("name"); ?></h1>
+    <h1 id="logo" class="grid_4"><a href="<?php echo get_option('home'); ?>"><?php bloginfo("name"); ?></a></h1>
     <!-- Navigation Menu -->
     <ul id="navigation" class="grid_8">
         <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>

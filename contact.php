@@ -15,33 +15,32 @@ Template Name: contract
 	</div>
 	<?php else : ?>
 	<div class="grid_8">
-		û���κ����£�
+		Ã»ÓÐÈÎºÎÎÄÕÂ£¡
 	</div>
 	<?php endif; ?>
 	<!-- Column 2 / Sidebar -->
 	<div class="grid_4 contact">
 		<!-- Adress and Phone Details -->
-		<h4>Address and Phone</h4>
+		<h4>地址邮箱：</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
-			<li> <strong>Your Company Name</strong><br />
-				1458 Sample Road, Redvalley<br />
-				City (State) H4Q 1J7<br />
-				Country<br />
+			<li> <strong>符栋栋</strong><br />
+				朝阳望京<br />
+				北京<br />
+				中国<br />
 				<br />
 			</li>
-			<li>USA - (888) 888-8888</li>
-			<li>Worldwide - (888) 888-8888</li>
+			<li>手机：18215600321</li>
+			<li>邮编：100102</li>
 		</ul>
 		<!-- Email Addresses -->
-		<h4>Emails</h4>
+		<h4>邮箱：</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
-			<li>General - <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
-			<li>Sales - <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></li>
+			<li>Gmail：<a href="mailto:fudongdonguestc@gmail.com">fudongdonguestc@gmail.com</a></li>
 		</ul>
 		<!-- Social Profile Links -->
-		<h4>Social Profiles</h4>
+		<h4>照片展：</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
 			<li class="float"><a href="#"><img alt="" src="images/twitter.png" title="Twitter" /></a></li>

@@ -22,7 +22,7 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="post">
 				<!-- Post Title -->
-				<h3 class="title"><a href="single.html"><?php the_title(); ?></a></h3>
+				<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<!-- Post Data -->
 				<p class="sub"><?php the_tags('标签：', ', ', ''); ?> &bull; <?php the_time('Y年n月j日') ?> &bull; <?php comments_popup_link('0 条评论', '1 条评论', '% 条评论', '', '评论已关闭'); ?></p>
 				<div class="hr dotted clearfix">&nbsp;</div>
@@ -31,7 +31,7 @@
 				<!-- Post Content -->
 				<?php the_excerpt(); ?>
 				<!-- Read More Button -->
-				<p class="clearfix"><a href="single.html" class="button right"> Read More...</a></p>
+				<p class="clearfix"><a href="<?php the_permalink(); ?>" class="button right"> 查看全文</a></p>
 			</div>
 			<div class="hr clearfix">&nbsp;</div>
 		<?php endwhile; ?>
