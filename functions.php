@@ -53,7 +53,7 @@ function aurelius_comment($comment, $args, $depth)
 			<div class="clearfix">
 					<?php printf(__('<cite class="author_name">%s</cite>'), get_comment_author_link()); ?>
 					<div class="comment-meta commentmetadata">发表于：<?php echo get_comment_time('Y-m-d H:i'); ?></div>
-					&nbsp;&nbsp;&nbsp;<?php edit_comment_link('修改'); ?>
+					&nbsp;&nbsp;&nbsp;
 			</div>
 
 			<div class="comment_text">
