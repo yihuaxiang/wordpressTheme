@@ -1,0 +1,90 @@
+#sidebar{
+    width:300px;
+    border:1px #013a73 solid;
+    padding-left:20px;
+    color:white;
+    background:url("../images/main_back.png");
+    margin-top:14px;
+}
+#search{
+    float: left;
+    color: #999;
+    border: solid 1px #ddd;
+    width: 40%;
+    height: 32px;
+    padding: 4px 12px;
+    border-right: none;
+    font-size: 16px;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#search:focus{
+    width:70%;
+}
+#button{
+color: #fff;
+    border: none;
+    background: #45B6F7;
+    height: 32px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-radius: 0 2px 2px 0;
+    width: 20%;
+}
+#sidebar h4{
+    font-size:24px;
+    font-weight:normal;
+}
+#sidebar h4:first-letter {
+    font-size: 26px;
+    line-height: 45px;
+    padding-right: 5px;
+}
+#sidebar h4{
+    height:45px;
+    line-height:45px;
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#sidebar > ul > li:hover > h4{
+    padding-left:20px;
+}
+#sidebar > ul > li{
+    height:45px;
+    overflow:hidden;
+    -webkit-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -o-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    -ms-transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+    transition: all 0.5s cubic-bezier(0, 1.23, 0.68, 1.01);
+}
+#sidebar > ul > li.hover{
+    height:inherit;
+}
+
+#sidebar > ul >li >p{
+    line-height:29px;
+    font-size:14px;
+}
+#sidebar > ul > li > ul >li{
+    line-height:29px;
+    height:29px;
+    cursor:pointer;
+    font-size:14px;
+    overflow: hidden;
+}
+#sidebar > ul > li > ul > li > a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    line-height:29px;
+}

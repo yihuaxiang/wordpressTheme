@@ -1,13 +1,12 @@
 
 <!-- Footer -->
-    <p class="grid_12 footer clearfix">
-    <span class="float">版权所有 &copy; 2010 <?php bloginfo('name'); ?>
-        &nbsp;&nbsp;|&nbsp;&nbsp;Powered By <a rel="external" title="WordPress主页" class="link" href="http://wordpress.org/">WordPress</a>
-        &nbsp;&nbsp;|&nbsp;&nbsp;Design By QwibbleDesigns&nbsp;&nbsp;|&nbsp;&nbsp;
-        Code By <a href="http://www.ludou.org/">Ludou</a>
-    </span>
-    <a class="float right" href="#">top</a> </p>
+    <p id="footer">
+        <span class="float">版权所有 &copy; 2015 <?php bloginfo('name'); ?>
+        </span>
+    </p>
 </div>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/sidebar.js"></script>
 <!--end wrapper-->
 <?php wp_footer(); ?>
 </body>

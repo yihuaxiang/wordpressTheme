@@ -21,6 +21,13 @@
 </title>
 <!-- Stylesheets -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/base.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/index.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/common.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/sidebar.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/header.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/footer.css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <!--feed 订阅-->
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有文章" href="<?php echo get_bloginfo('rss2_url'); ?>" />
@@ -80,14 +87,15 @@ $keywords = trim(strip_tags($keywords));
 
 <?php flush(); ?>
 <body>
-<div id="wrapper" class="container_12 clearfix">
-    <!-- Text Logo -->
-    <h1 id="logo" class="grid_4"><a href="<?php echo get_option('home'); ?>"><?php bloginfo("name"); ?></a></h1>
-    <!-- Navigation Menu -->
-    <ul id="navigation" class="grid_8">
-        <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
-        <li <?php if (is_home()){echo "class=current";} ?> ><a title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">主页</a></li>
-    </ul>
+<div id="wrapper" class=>
+    <div id="navi">
+        <h1 ig="logo" class=""><a href="<?php echo get_option('home'); ?>"><?php bloginfo("name"); ?></a></h1>
+        <ul class=" clear">
+            <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
+            <li  <?php if (is_home()){echo "class=current";} ?> ><a class="left" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">主页</a></li>
+        </ul>
+    </div>
+
     <div class="hr grid_12 clearfix">&nbsp;</div>
     <!-- Caption Line -->
     <!--<h2 class="grid_12 caption clearfix">Our <span>blog</span>, keeping you up-to-date on our latest news.</h2>
