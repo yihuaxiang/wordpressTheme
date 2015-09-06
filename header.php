@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/base.css" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/index.css" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/common.css" />
-<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/sidebar.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font.css" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/header.css" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/footer.css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -43,7 +43,7 @@ $keywords = '';
 
 if (is_home() || is_page()) {
    // 主页description
-   $description = "符栋栋，web前端工程师，毕业于电子科技大学，就职于阿里巴巴大厦移动互联网事业部高德地图";
+   $description = "符栋栋，web前端工程师，毕业于电子科技大学，就职于阿里巴巴移动互联网事业部高德地图";
 
    // 主页keywords
    $keywords = "符栋栋 web前端 js html css html5 css3 jquery 网站 开发 代码";
@@ -89,7 +89,7 @@ $keywords = trim(strip_tags($keywords));
 <body>
 <div id="wrapper" class=>
     <div id="navi">
-        <h1 ig="logo" class=""><a href="<?php echo get_option('home'); ?>"><?php bloginfo("name"); ?></a></h1>
+        <h1 ig="logo" class=""><a href="<?php echo get_option('home'); ?>"><span class="icon-home"></span><?php bloginfo("name"); ?></a></h1>
         <ul class=" clear">
             <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
             <li  <?php if (is_home()){echo "class=current";} ?> ><a class="left" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">主页</a></li>

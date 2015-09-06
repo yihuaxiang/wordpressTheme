@@ -1,9 +1,11 @@
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/comments.css" />
+<div id="comments" class="clear">
 <?php
     if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
         die ('Please do not load this page directly. Thanks!');
 ?>
         <!-- Comment's List -->
-        <h3>Comments</h3>
+        <h3>已有评论</h3>
         <div class="hr dotted clearfix">&nbsp;</div>
         <ol class="commentlist">
 
@@ -45,7 +47,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
 <p>你必须 <a href="<?php echo wp_login_url( get_permalink() ); ?>">登录</a> 才能发表评论.</p>
 <?php else  : ?>
 <!-- Comment Form -->
-<form id="commentform" name="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
+<form id="comment_form" name="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
     <h3>发表评论</h3>
     <div class="hr dotted clearfix">&nbsp;</div>
     <ul>
@@ -72,9 +74,13 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
         </li>
         <li class="clearfix">
             <!-- Add Comment Button -->
-            <a href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="button medium black right">发表评论</a> </li>
+            <br />
+            <a id="comments_submit_button" href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="button medium black right">发表评论</a> </li>
+            <br />
+            <br />
     </ul>
     <?php comment_id_fields(); ?>
     <?php do_action('comment_form', $post->ID); ?>
 </form>
 <?php endif; ?>
+</div>

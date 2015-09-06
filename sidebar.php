@@ -1,4 +1,5 @@
    <!-- Column 2 / Sidebar -->
+   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/sidebar.css" />
     <div id="sidebar" class="right">
     <ul>
         <li>
@@ -8,6 +9,7 @@
                 <input type="search" id="search" name="s" placeholder="搜索文章" />
                 <input type="hidden" value="submit" />
                 <button type="submit" id="button" >搜索</button>
+                <div class="hr clearfix">&nbsp;</div>
             </form>
         </li>
         <li>
